@@ -1,0 +1,22 @@
+{
+  "name": "alura-node",
+  "version": "1.0.0",
+  "description": "Curso Node ",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "nodemon server.js --ignore *.marko.js"
+  },
+  "author": "Luiz Mario Pimenta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "marko": "^4.16.1",
+    "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1",
+    "nodemon": "^1.18.10"
+  }
+}
