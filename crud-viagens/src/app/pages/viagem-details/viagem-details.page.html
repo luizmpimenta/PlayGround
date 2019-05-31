@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Detalhes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="tituloViagem"
+        [(ngModel)]="viagem.tituloViagem"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="dataIni"
+        [(ngModel)]="viagem.dataIni"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="dataFin"
+        [(ngModel)]="viagem.dataFin"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="status"
+        [(ngModel)]="viagem.status"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="Hospedagem"
+        [(ngModel)]="viagem.hospedagem"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="Destino"
+        [(ngModel)]="viagem.destino"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="Compromissos"
+        [(ngModel)]="viagem.compromissos"
+      ></ion-input>
+    </ion-item>
+    <ion-item *ngIf="viagem">
+      <ion-input
+        required
+        type="text"
+        placeholder="Observações"
+        [(ngModel)]="viagem.obs"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveViagem()">Save</ion-button>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
+    <ion-fab-button color="danger" routerLink="/" routerDirection="forward" (click) = "onRemove(viagemId)">
+      <ion-icon name="trash"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
